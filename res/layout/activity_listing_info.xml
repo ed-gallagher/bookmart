@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ListingInfoActivity" >
+
+
+    <TextView
+        android:id="@+id/bookInfoHeaderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/listingBookInfoHeaderLabel"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/titleKeyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookInfoHeaderLabel"
+        android:layout_alignRight="@+id/publisherKeyLabel"
+        android:text="@string/listingInfoTitleKeyLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/titleValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookInfoHeaderLabel"
+        android:layout_toRightOf="@+id/titleKeyLabel"
+        android:text="@string/listingInfoTitleValueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/authorKeylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/publisherKeyLabel"
+        android:layout_below="@+id/titleKeyLabel"
+        android:text="@string/listingInfoAuthorKeyLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/authorValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleValueLabel"
+        android:layout_alignLeft="@+id/titleValueLabel"
+        android:text="@string/listingInfoAuthorValueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/publisherKeyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/authorKeylabel"
+        android:text="@string/listingInfoPublisherKeyLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/publisherValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authorValueLabel"
+        android:layout_alignLeft="@+id/authorValueLabel"
+        android:text="@string/listingInfoPublisherValueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <TextView
+        android:id="@+id/genreKeyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publisherKeyLabel"
+        android:layout_alignRight="@+id/publisherKeyLabel"
+        android:text="@string/listingInfoGenreKeyLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/genreValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publisherValueLabel"
+        android:layout_alignLeft="@+id/publisherValueLabel"
+        android:text="@string/listingInfoGenreValueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/isbnKeyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genreKeyLabel"
+        android:layout_alignRight="@+id/publisherKeyLabel"
+        android:text="@string/listingInfoISBNKeyLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/isbnValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genreValueLabel"
+        android:layout_alignLeft="@+id/genreValueLabel"
+        android:text="@string/listingInfoISBNValueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+
+    <TextView
+        android:id="@+id/editionKeyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isbnKeyLabel"
+        android:layout_alignRight="@+id/publisherKeyLabel"
+        android:text="@string/listingInfoEditionKeyLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/editionValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isbnValueLabel"
+        android:layout_alignLeft="@+id/isbnValueLabel"
+        android:text="@string/listingInfoEditionValueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" /> 
+    
+    <TextView
+        android:id="@+id/pubDateKeyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editionKeyLabel"
+        android:layout_alignRight="@+id/publisherKeyLabel"
+        android:text="@string/listingInfoPubDateKeyLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/pubDateValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editionValueLabel"
+        android:layout_alignLeft="@+id/editionValueLabel"
+        android:text="@string/listingInfoPubDateValueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />   
+          
+    <TextView
+        android:id="@+id/formatKeyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pubDateKeyLabel"
+        android:layout_alignRight="@+id/publisherKeyLabel"
+        android:layout_marginTop="24dp"
+        android:text="@string/listingInfoFormatKeyLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/formatValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pubDateValueLabel"
+        android:layout_alignLeft="@+id/pubDateValueLabel"
+        android:text="@string/listingInfoFormatValueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />  
+        
+    <TextView
+        android:id="@+id/itemInfoHeaderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formatKeyLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/listingItemInfoHeaderLabel"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TextView
+        android:id="@+id/sellerKeyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemInfoHeaderLabel"
+        android:layout_alignRight="@+id/conditionKeyLabel"
+        android:text="@string/listingInfoSellerKeyLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/sellerValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/conditionValueLabel"
+        android:layout_below="@+id/itemInfoHeaderLabel"
+        android:text="@string/listingInfoSellerValueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+   
+    <TextView
+        android:id="@+id/conditionKeyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sellerKeyLabel"
+        android:layout_alignRight="@+id/publisherKeyLabel"
+        android:text="@string/listingInfoConditionKeyLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/conditionValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sellerValueLabel"
+        android:layout_alignLeft="@+id/pubDateValueLabel"
+        android:text="@string/listingInfoConditionValueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />  
+    
+    <TextView
+        android:id="@+id/askingPriceKeyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conditionKeyLabel"
+        android:layout_alignRight="@+id/pubDateKeyLabel"
+       
+        android:text="@string/listingInfoAskingPriceKeyLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/askingPriceValueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conditionValueLabel"
+        android:layout_alignLeft="@+id/pubDateValueLabel"
+        android:text="@string/listingInfoAskingPriceValueLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium" /> 
+    <!-- 
+public String content; // title
+		public Object item; // reference to item being sold
+		public String condition; 
+		public double askingPrice;
+		public boolean forTrade; // willing to trade books
+		public Date listingStart;
+		public Date listingEnd;
+		public int viewCount;
+		public String seller; -->
+
+    <Button
+        android:id="@+id/offerBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/isbnKeyLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/itemInfoHeaderLabel"
+        android:layout_marginBottom="40dp"
+        android:text="@string/OfferButLabel" 
+    	android:onClick="goToOffer" />
+
+    <ListView
+        android:id="@+id/offerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offerBut"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+ 
+</RelativeLayout>
